@@ -41,7 +41,7 @@ function Workoutform() {
     <form className="create" onSubmit={handleSubmit}>
       <h3>Add a New Workout</h3>
 
-      <lebal>Exersize Title: </lebal>
+      <p>Exersize Title: </p>
       <input
         type="text"
         onChange={(e)=> setTitle(e.target.value)}
@@ -49,7 +49,7 @@ function Workoutform() {
         className={emptyFields.includes('title') ? 'error' : ''}
       />   
 
-      <lebal>Load (kg): </lebal>
+      <p>Load (kg): </p>
       <input
         type="number"
         onChange={(e)=> setLoad(e.target.value)}
@@ -57,7 +57,7 @@ function Workoutform() {
         className={emptyFields.includes('load') ? 'error' : ''}
       />  
 
-      <lebal>Reps: </lebal>
+      <p>Reps: </p>
       <input
         type="number"
         onChange={(e)=> setReps(e.target.value)}
