@@ -11,10 +11,10 @@ function Home() {
   const {workouts, dispatch} = useWorkoutsContext()
 
   useEffect(()=>{
-    const fetchWorkouts = async () =>{
+    const fetchWorkouts= async () =>{
       const response = await fetch ('/api/workouts')
       const json =await response.json()
-      console.log(json)
+
       if (response.ok){
         dispatch({type: 'SET_WORKOUTS',payload: json})
       }
