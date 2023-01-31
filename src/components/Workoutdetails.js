@@ -10,7 +10,7 @@ function Workoutdetails({workout}) {
 
 
   const handleClick = async () => {
-    const response = await fetch('/api/workouts/'+  workout._id,{
+    const response = await fetch('https://workoutapi.onrender.com/api/workouts/'+  workout._id,{
       method:'DELETE'
     })
 
